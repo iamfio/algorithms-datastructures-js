@@ -38,7 +38,7 @@ const tree = [
   },
 ];
 
-const recursive = (tree) => {
+function recursiveSum(tree) {
   let sum = 0;
 
   tree.forEach((node) => {
@@ -52,9 +52,9 @@ const recursive = (tree) => {
   });
 
   return sum;
-};
+}
 
-const iteration = (tree) => {
+function iterationSum(tree) {
   if (!tree.length) {
     return 0;
   }
@@ -74,7 +74,7 @@ const iteration = (tree) => {
   }
 
   return sum;
-};
+}
 
 console.log(recursive(tree));
 console.log(iteration(tree));
